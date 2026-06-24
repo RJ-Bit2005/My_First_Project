@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -26,6 +30,14 @@ img {
 
 p {
     line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__container {
@@ -156,6 +168,16 @@ button:active {
     margin: 0 auto;
 }
 
+.no-cursor {
+   cursor: no-drop;
+}
+
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*
 
 HIGHLIGHTS 
@@ -239,6 +261,7 @@ FEATURES
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -283,4 +306,62 @@ FEATURES
     text-decoration: line-through;
     padding-right: 6px;
     color: rgba(0, 0, 0, 0.479);
+}
+
+/* 
+
+LOWER HEADER 
+
+*/
+
+#explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 24px;
+    background-color: bisque;
+}
+
+.explore__button {
+    margin-top: 24px;
+    font-size: 24px;
+    padding: 4px;
+    border: none;
+    color: white;
+    background-color: darkred;
+    border-radius: 6px;
+    width: 150px;
+}
+
+.explore__title {
+    font-size: 28px;
+}
+
+/* 
+
+FOOTER 
+
+*/
+
+footer {
+    background-color: #242424
+}
+
+.footer__logo--image {
+    width: 160px; 
+}
+
+.footer__link,
+.footer__copyright {
+    color: #fff;
+}
+
+.footer__list {
+    margin: 20px 0 24px 0;
+}
+
+.footer__link {
+    padding: 0 8px;
 }
